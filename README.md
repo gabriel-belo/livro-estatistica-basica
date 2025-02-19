@@ -31,3 +31,54 @@ Estudando estatística com o livro 'Estatística básica' do Wilton Bussab e Ped
             <td>Análise de correlação entre duas variáveis</td>
       </tr>
 </table>
+
+<h4>Exercicio 8</h4>
+<p>Podemos também apresentar Histograma Acumulativo (cumulative=True) para exibir a distribuição acumulativa e Histograma Normalizado (density=True) se quiser exibir densidade de probabilidade em vez de contagem absoluta</p>
+
+<h5>Histograma Normalizado (density=True)</h5>
+<ul>
+      <li>Em vez de contar a frequência absoluta dos valores, ele exibe a densidade de probabilidade.</li>
+      <li>A área total do histograma é normalizada para 1.</li>
+      <li>Útil para comparar distribuições com diferentes tamanhos de amostra.</li>
+      <li>O eixo Y não mostra contagens absolutas, mas sim a densidade de probabilidade.</li>
+      <li>A soma das áreas das barras será 1, garantindo que o gráfico possa ser comparado com diferentes distribuições.</li>
+      
+</ul>
+
+<p>A densidade de probabilidade é um conceito da estatística que representa a probabilidade relativa de um valor ocorrer dentro de um intervalo específico, especialmente para dados contínuos</p>
+<p>Em um histograma normalizado (density=True), a densidade de probabilidade no eixo Y indica quão frequente cada valor ocorre em relação ao total de dados, de modo que a área total do histograma seja 1.</p>
+
+<h5>Como Interpretar o Histograma Normalizado?</h5>
+<ul>
+      <li>O eixo Y não representa a contagem bruta dos valores.</li>
+      <li>A área total das barras será igual a 1.</li>
+      <li>O histograma normalizado pode ser comparado a uma função de distribuição de probabilidade.</li>
+      <li>Ele permite comparar diferentes distribuições independentemente do tamanho da amostra.</li>
+</ul>
+
+<h4>Cálculo para densidade de probabilidade</h4>
+Densidade= FrequEñcia absoluta/Tamanho do bin×Total de Elementos
+​
+
+
+
+<h5>Histograma Acumulativo (cumulative=True)</h5>
+<ul>
+      <li>Em vez de contar quantos valores caem em cada bin, ele soma os valores progressivamente.</li>
+      <li>Mostra quantos dados estão abaixo de um certo valor.</li>
+      <li>Se normalizado (density=True), a última barra terá valor 1, indicando 100% dos dados.</li>
+      <li>Útil para visualizar a função de distribuição acumulada (CDF - Cumulative Distribution Function).</li>
+      <li>Cada barra soma os valores das anteriores, formando uma curva crescente.</li>
+      <li>O último valor atinge o total de dados (1000 neste caso).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
