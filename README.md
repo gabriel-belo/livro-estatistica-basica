@@ -72,7 +72,10 @@ Densidade= FrequEñcia absoluta/Tamanho do bin×Total de Elementos
       <li>O último valor atinge o total de dados (1000 neste caso).</li>
 </ul>
 
+<h3>Exemplos Computacionais</h3>
+<p>Série temporal: são dados observados em instantes ordenados de tempo. Utilizado para observar relações em instantes de tempo diferente.</p>
 
+<h3>Problemas e complementos</h3>
 
 
 
