@@ -7,6 +7,8 @@ Estudando estatística com o livro 'Estatística básica' do Wilton Bussab e Ped
 
 <h5>Exercício 6</h5>
 
+<p>Para gerar gráficos de dispersão utilizamos a função plt.scatter(eixo x, eixo y) do matplotlib. </p>
+
 
 <table>
       <tr>
