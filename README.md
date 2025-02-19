@@ -77,6 +77,17 @@ Densidade= FrequEñcia absoluta/Tamanho do bin×Total de Elementos
 
 <h3>Problemas e complementos</h3>
 
+<h4>Exercicio 9</h4>
+<p>plt.subplot(nlinhas, ncolunas, índice)</p>
+<h5>Onde:</h5>
+<ul>
+      <li>nlinhas → Número de linhas na grade de subplots.</li>
+      <li>ncolunas → Número de colunas na grade de subplots.</li>
+      <li>índice → Qual gráfico está sendo desenhado (da esquerda para a direita, de cima para baixo).</li>
+</ul>
+
+
+
 
 
 
