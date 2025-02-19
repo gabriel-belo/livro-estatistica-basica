@@ -8,6 +8,7 @@ Estudando estatística com o livro 'Estatística básica' do Wilton Bussab e Ped
 <h5>Exercício 6</h5>
 
 <p>Para gerar gráficos de dispersão utilizamos a função plt.scatter(eixo x, eixo y) do matplotlib. </p>
+<p>Para que o fráfico seja unidimensional, usamos [1] * len(valores do eixo x), pois geramos uma lista que repete o valor 1 de acordo com a quantidade de valores da lista no eixo x</p>
 
 
 <table>
