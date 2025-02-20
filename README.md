@@ -35,6 +35,13 @@ Estudando estatística com o livro 'Estatística básica' do Wilton Bussab e Ped
 <h4>Exercicio 8</h4>
 <p>Podemos também apresentar Histograma Acumulativo (cumulative=True) para exibir a distribuição acumulativa e Histograma Normalizado (density=True) se quiser exibir densidade de probabilidade em vez de contagem absoluta</p>
 
+<h5>Histograma acumulativo</h5>
+
+<p>Agora, se fizermos um histograma acumulativo, os valores são somados progressivamente:</p>
+
+<p>Ou seja, no histograma acumulativo, o último valor sempre representa o total de dados analisados.</p>
+
+
 <h5>Histograma Normalizado (density=True)</h5>
 <ul>
       <li>Em vez de contar a frequência absoluta dos valores, ele exibe a densidade de probabilidade.</li>
@@ -71,6 +78,33 @@ Densidade= FrequEñcia absoluta/Tamanho do bin×Total de Elementos
       <li>Cada barra soma os valores das anteriores, formando uma curva crescente.</li>
       <li>O último valor atinge o total de dados (1000 neste caso).</li>
 </ul>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Tipo de Frequência</th>
+            <th>O que significa?</th>
+            <th>Quando usar?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Frequência Absoluta</td>
+            <td>Contagem direta de valores.</td>
+            <td>Quando queremos saber quantas vezes um valor ocorre.</td>
+        </tr>
+        <tr>
+            <td>Frequência Relativa</td>
+            <td>Razão entre a frequência absoluta e o total de elementos.</td>
+            <td>Para comparar dados de diferentes tamanhos.</td>
+        </tr>
+        <tr>
+            <td>Frequência Acumulada</td>
+            <td>Soma progressiva das frequências absolutas.</td>
+            <td>Para ver quantos valores estão abaixo de um certo limite.</td>
+        </tr>
+    </tbody>
+</table>
 
 <h3>Exemplos Computacionais</h3>
 <p>Série temporal: são dados observados em instantes ordenados de tempo. Utilizado para observar relações em instantes de tempo diferente.</p>
