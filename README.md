@@ -124,6 +124,36 @@ Densidade= FrequEñcia absoluta/Tamanho do bin×Total de Elementos
 Em dados de tabela de frequência pode ocorrer do uso de classes com tamanhos desiguais que podem passar a ideia de que estas apresentam um ponto de máxima, porém por abrangerem um espaço maior elas podem ter dados dertorcidos. Então para isso criamos uma coluna de Amplitude(Δi) que nada mais é que o espaço que aquela classe ocupa no todo. O segundo passo é a construção da coluna das densidade de frequência em cada classe, que é obtida dividindo as frequências(n) pela a amplitude (Δ), ou seja, a medida que indica qual a concentração por unidade da variável.
 Para gerar a porcentagem (densidade da proporção) por unidade da variavel. proporção (f) / amplitude (Δ).
 
+<h5>Densidade de proporção</h5>
+
+A Densidade de Proporção normaliza os valores para que a área total do histograma seja igual a 1.
+​
+Essa medida é útil quando queremos comparar distribuições diferentes ou visualizar os dados como uma função densidade de probabilidade (PDF).
+
+Isso permite que possamos comparar proporcionalmente os dados.
+
+<table>
+        <thead>
+            <tr>
+                <th>Conceito</th>
+                <th>Fórmula</th>
+                <th>Uso Principal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Densidade de Frequência</strong></td>
+                <td>f / largura do intervalo</td>
+                <td>Histograma com intervalos desiguais</td>
+            </tr>
+            <tr>
+                <td><strong>Densidade de Proporção</strong></td>
+                <td>freq. relativa / largura do intervalo</td>
+                <td>Histograma como uma função de densidade de probabilidade</td>
+            </tr>
+        </tbody>
+    </table>
+
 
 
 
