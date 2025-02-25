@@ -154,11 +154,51 @@ Isso permite que possamos comparar proporcionalmente os dados.
         </tbody>
     </table>
 
+   
+    
+
+<h4>Exercicio 12 e 13</h4>
+O histograma alisado é muito útil para ilustrar rapidamente qual o tipo de comportamento que se espera para a distribuição de uma dada variável.
+
+No matplotlib, um histograma alisado pode ser obtido utilizando Kernel Density Estimation (KDE) com a biblioteca seaborn ou scipy.stats.gaussian_kde. Isso ajuda a visualizar a distribuição dos dados sem as restrições das barras discretas de um histograma tradicional.
+
+A biblioteca seaborn facilita a criação de um histograma alisado com a opção kde=True:
+
+<h4>Exercício 15</h4>
+Outra medida muito usada para descrever dados quatitativos é a frequência acumulada, que indica quantos elementos, ou que porcentagem deles, estão abaixo de um certo valor. Ele faz a soma de todos os valores apresentados até aquele instante e os compara em relação ao resto dos valores.
+
+<h4>Exercicio 16</h4>
+Exercício A:
+Para calcular a frequência acumulada no pandas, usamos o método .cumsum(), que soma os valores de forma cumulativa.
+
+No pandas, você pode criar uma nova coluna com os dados manipulados de uma coluna existente sem alterar a original. Para isso, pode usar métodos como .apply(), operações vetorizadas ou funções personalizadas.
+
+Exemplo 1: Usando .apply() com uma função personalizada, Mantemos a coluna "Idade" intacta e criamos uma nova coluna "Categoria de Idade" com os valores transformados:
+
+import pandas as pd
+# Criando um DataFrame exemplo
+df = pd.DataFrame({
+    "Idade": [25, 30, 35, 40, 45]
+})
+
+# Criando uma nova coluna transformando as idades em categorias
+def categorizar_idade(idade):
+    if idade < 30:
+        return "Jovem"
+    elif idade < 40:
+        return "Adulto"
+    else:
+        return "Sênior"
+
+# Aplicando a função e criando uma nova coluna sem alterar a original
+df["Categoria de Idade"] = df["Idade"].apply(categorizar_idade)
+
+print(df)
 
 
-
-
-
-
-
+Exemplo 2: Usando operações vetorizadas do pandas, Isso adiciona uma nova coluna "Idade ao Quadrado" sem modificar a coluna original:
+python
+Copiar
+Editar
+df["Idade ao Quadrado"] = df["Idade"] ** 2  # Eleva cada idade ao quadrado
 
