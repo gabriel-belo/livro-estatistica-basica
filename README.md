@@ -176,12 +176,12 @@ No pandas, você pode criar uma nova coluna com os dados manipulados de uma colu
 Exemplo 1: Usando .apply() com uma função personalizada, Mantemos a coluna "Idade" intacta e criamos uma nova coluna "Categoria de Idade" com os valores transformados:
 
 import pandas as pd
-# Criando um DataFrame exemplo
+<h5>Criando um DataFrame exemplo</h5>
 df = pd.DataFrame({
     "Idade": [25, 30, 35, 40, 45]
 })
 
-# Criando uma nova coluna transformando as idades em categorias
+<h5>Criando uma nova coluna transformando as idades em categorias</h5>
 def categorizar_idade(idade):
     if idade < 30:
         return "Jovem"
@@ -190,7 +190,7 @@ def categorizar_idade(idade):
     else:
         return "Sênior"
 
-# Aplicando a função e criando uma nova coluna sem alterar a original
+<h5>Aplicando a função e criando uma nova coluna sem alterar a original</h5>
 df["Categoria de Idade"] = df["Idade"].apply(categorizar_idade)
 
 print(df)
@@ -202,3 +202,70 @@ Copiar
 Editar
 df["Idade ao Quadrado"] = df["Idade"] ** 2  # Eleva cada idade ao quadrado
 
+<h1>Cap 3- Medidas-Resumo </h1>
+<h3>Moda</h3>
+A moda é definida como a realização mais frequente do conjunto de valores observados. Em alguns casos, pode haver mais de uma moda, ou seja, a distribuição dos valores pode ser bimodal, trimodal etc.
+
+A mediana é a realização que ocupa a posição central da série de observações, quando estão ordenadas em ordem crescente. Quando o número de observações for par, usa-se como mediana a média aritmética das duas observações centrais.
+
+Média aritmética é a soma das observações dividida pelo número delas.
+
+1º Caso: Média Simples
+Se temos 𝑥1, 𝑥2,...,𝑥𝑛 como os valores de uma variável 𝑋, a média aritmética simples é calculada pela soma de todos os valores dividida pelo número total de elementos:
+ 
+Exemplo no mundo real:
+Imagine que um aluno fez cinco provas e obteve as notas: 7, 8, 6, 9 e 10. A média aritmética da nota final será:
+
+𝑋= (7 + 8 + 6 + 9 + 10)/5= 40/5 = 8
+
+Ou seja, a média das notas é 8.
+
+2º Caso: Média Ponderada (Frequência Absoluta)
+Se tivermos n observações da variável 𝑋, mas algumas delas se repetem, podemos reescrever a média levando em conta a frequência absoluta (𝑛𝑖), ou seja, o número de vezes que cada valor aparece. Na media ponderada usamos uma forma mais resumidade calcular valores repetidos.
+Exemplo no mundo real:
+Suponha que em uma sala de aula os alunos tiraram as seguintes notas:
+
+Nota 6: 3 alunos
+Nota 7: 5 alunos
+Nota 8: 2 alunos
+A média das notas será:
+
+𝑋=(3 × 6) + (5 × 7) + (2 × 8) / (3 + 5 + 2) =  
+X= 69/10 =6.9
+
+Ou seja, a média das notas é 6,9.
+
+3º Caso: Média com Frequência Relativa
+Se tivermos a frequência relativa (𝑓𝑖), que representa a proporção de cada valor em relação ao total, podemos reescrever a média assim:
+
+𝑋=𝑥1.𝑓1 + 𝑥2.𝑓2 + ⋯ + 𝑥𝑘.𝑓𝑘
+ 
+Sendo:
+      𝑓𝑖= 𝑛𝑖/𝑛
+
+
+onde 𝑓𝑖 indica a frequência relativa de 𝑥𝑖 no conjunto de dados. Nesta média utilizamos a multiplicação do valor sobre sua frequencia relativa para que não deixemos de fora a relatividade do peso(quantidade) sobre o todo.
+
+Exemplo no mundo real:
+Continuando com o exemplo anterior, temos:
+
+Nota 6: 3 alunos → 𝑓1= 3/10= 0.3
+
+Nota 7: 5 alunos → 𝑓2= 5/10 = 0.5
+
+Nota 8: 2 alunos → 𝑓3 = 2/10 = 0.2
+
+Agora, aplicamos na fórmula:
+
+𝑋= (6 × 0.3) + (7 × 0.5) + (8 × 0.2)
+
+𝑋= 1.8 + 3.5 +1.6 = 6.9
+
+A média continua 6,9, mas agora foi calculada com frequência relativa.
+
+Resumo e Relação com o Mundo Real
+<ul>
+      <li>A média simples é usada quando todos os valores têm o mesmo peso (ex: calcular a média das notas de um aluno).</li>
+      <li>A média ponderada é útil quando alguns valores aparecem mais vezes (ex: calcular a nota média de uma turma considerando quantos alunos tiraram cada nota).</li>
+      <li>A média com frequência relativa é uma outra forma de ver a média ponderada, expressando os pesos em forma de proporção.</li>
+</ul>
