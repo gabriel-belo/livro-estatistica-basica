@@ -269,3 +269,13 @@ Resumo e Relação com o Mundo Real
       <li>A média ponderada é útil quando alguns valores aparecem mais vezes (ex: calcular a nota média de uma turma considerando quantos alunos tiraram cada nota).</li>
       <li>A média com frequência relativa é uma outra forma de ver a média ponderada, expressando os pesos em forma de proporção.</li>
 </ul>
+
+As observações ordenadas como (3,4) são chamadas de estatística de ordem.
+
+Para calcular a mode de uma variável, precisamos apenas da distribuição de frequências (contagem). Já para a mediana necessitamos minimamente ordenar as realizações da variavel. Já a média aritmética só pode ser calculada para variáveis quantitativas.
+
+Para as variáveis nominais podemos somente trabalhar com a moda.Para as ordinais podemos utilizar tanto moda como mediana.
+
+A média, moda e mediana não informão sobre suas diferentes variabilidades. Um critério frequentemente usado para tal fim é aquele que mede a dispersão dos dados em torno de sua média, e duas medidas são mais usadas: desvio médio e variância.
+
+O princípio básico é analisar os desvios das observações em relação à média dessas observações.
