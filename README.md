@@ -272,10 +272,65 @@ Resumo e Relação com o Mundo Real
 
 As observações ordenadas como (3,4) são chamadas de estatística de ordem.
 
-Para calcular a mode de uma variável, precisamos apenas da distribuição de frequências (contagem). Já para a mediana necessitamos minimamente ordenar as realizações da variavel. Já a média aritmética só pode ser calculada para variáveis quantitativas.
+Para calcular a moda de uma variável, precisamos apenas da distribuição de frequências (contagem). Já para a mediana necessitamos minimamente ordenar as realizações da variavel. Já a média aritmética só pode ser calculada para variáveis quantitativas.
 
 Para as variáveis nominais podemos somente trabalhar com a moda.Para as ordinais podemos utilizar tanto moda como mediana.
+
+O resumo de um conjunto de dados por uma única medida representativa de posição central esconde toda a informação sobre a variabilidade do conjunto de observações.
 
 A média, moda e mediana não informão sobre suas diferentes variabilidades. Um critério frequentemente usado para tal fim é aquele que mede a dispersão dos dados em torno de sua média, e duas medidas são mais usadas: desvio médio e variância.
 
 O princípio básico é analisar os desvios das observações em relação à média dessas observações.
+
+
+<h3>O que isso significa na prática 'Para qualquer conjunto de dados, a soma dos desvios é igual a zero':</h3>
+Em um conjunto de dados, os valores acima da média possuem desvios positivos e os valores abaixo da média possuem desvios negativos.
+Quando somamos esses desvios, os positivos e negativos se cancelam, resultando sempre em zero.
+A média é o centro de equilíbrio dos dados.
+
+A variância é uma medida de dimensão igual ao quadrado da dimensão dos dados(por exemplo, se os dados estão expressos em cm a variância sera expressa em cm²), isto pode causar porblemas de interpretação. Então costuma-se usar, o desvio padrão que é definido como a raiz quadrada da variância.
+
+Quando temos um conjunto de dados, podemos representá-lo por uma única medida resumo, como a média aritmética. No entanto, nem todos os valores do conjunto são exatamente iguais à média, então há um "erro" ao substituir cada valor por ela.
+
+Esse "erro" pode ser medido pelo desvio médio (DM) ou pelo desvio padrão (DP), que indicam o quanto, em média, os valores do conjunto diferem da média.
+
+<h3>Desvio Absoluto Mediano (DAM)</h3>
+O Desvio Absoluto Mediano (DAM) é uma medida de dispersão que indica o quão distante, em média, os valores de um conjunto de dados estão da mediana.
+
+<h4>Fórmula do DAM:</h4>
+
+𝐷𝐴𝑀= mediana(∣ 𝑥𝑖 − 𝑋∣)
+onde:
+
+𝑥𝑖 são os valores do conjunto de dados,
+
+𝑋 é a mediana do conjunto,
+
+∣xi − X∣ são os desvios absolutos em relação à mediana, O DAM é a mediana desses desvios absolutos.
+
+<h4>Passo a Passo para Calcular o DAM</h4>
+Exemplo:
+Conjunto de dados: 3, 6, 7, 8, 10
+
+<h4>Passo 1: Encontrar a mediana</h4>
+A mediana é o valor central dos dados ordenados.
+
+𝑋= 7
+
+<h4>Passo 2: Calcular os desvios absolutos</h4>
+
+∣3−7∣=4, ∣6−7∣=1, ∣7−7∣=0, ∣8−7∣=1, ∣10−7∣=3
+Os desvios absolutos são: 4, 1, 0, 1, 3
+
+<h4>Passo 3: Calcular a mediana desses desvios</h4>
+Ordenando: 0, 1, 1, 3, 4
+A mediana dos desvios absolutos é 1.
+DAM = 1
+
+<h4>Por que o DAM é útil?</h4>
+<ul>
+      <li>Menos sensível a outliers → O DAM é mais robusto do que o desvio padrão, pois usa a mediana em vez da média, o que o torna menos afetado por valores extremos.</li>      
+      <li>Melhor para dados assimétricos → Se os dados têm valores muito grandes ou muito pequenos (distribuição enviesada), o DAM pode ser mais representativo do que o desvio padrão.</li>
+</ul>
+
+Resumo: O DAM mede a dispersão dos dados em relação à mediana, sendo mais resistente a valores extremos do que o desvio padrão.
