@@ -334,3 +334,100 @@ DAM = 1
 </ul>
 
 Resumo: O DAM mede a dispersão dos dados em relação à mediana, sendo mais resistente a valores extremos do que o desvio padrão.
+
+
+<h3>Vamos comparar Desvio Médio, Desvio Padrão e Desvio Médio em relação à Moda.</h3>
+ 1️⃣ Desvio Médio
+
+✅ Vantagens:
+✔️ Fácil de calcular – envolve apenas valores absolutos, sem elevar ao quadrado.
+✔️ Menos sensível a valores extremos do que o desvio padrão.
+✔️ Interpretável diretamente como o desvio médio em relação à média.
+
+❌ Desvantagens:
+❌ Não é matematicamente conveniente para cálculos estatísticos avançados, como regressões.
+❌ Não destaca grandes variações, pois não eleva as diferenças ao quadrado.
+❌ Pode não ser tão útil para distribuições muito assimétricas.
+
+2️⃣ Desvio Padrão 
+
+✅ Vantagens:
+✔️ Mais usado em estatística e probabilidade, sendo base para distribuições como a Normal.
+✔️ Dá mais peso a valores extremos, pois eleva ao quadrado as diferenças.
+✔️ Matematicamente mais conveniente para cálculos estatísticos e inferências.
+
+❌ Desvantagens:
+❌ Mais difícil de interpretar intuitivamente, pois eleva ao quadrado e tira a raiz.
+❌ Muito sensível a valores extremos, o que pode distorcer a análise.
+❌ Pode ser menos útil em distribuições altamente assimétricas.
+
+3️⃣ Desvio Médio em relação à Moda 
+
+✅ Vantagens:
+✔️ Útil quando a moda é uma boa medida de tendência central, como em distribuições assimétricas.
+✔️ Fácil de interpretar, já que indica a dispersão em torno do valor mais frequente.
+✔️ Menos afetado por valores extremos do que o desvio padrão.
+
+❌ Desvantagens:
+❌ Nem sempre a moda é representativa, especialmente se houver múltiplas modas ou se os dados forem distribuídos uniformemente.
+❌ Pode ser instável, já que a moda depende da frequência mais alta e pode mudar se um valor ligeiramente diferente aparecer mais vezes.
+❌ Pouco usado em estatísticas avançadas, pois a moda não tem boas propriedades matemáticas para certos cálculos.
+
+4️⃣ Desvio Absoluto Mediano (DAM)
+
+✅ Vantagens:
+✔️ Resistente a outliers, já que usa a mediana em vez da média.
+✔️ Mais representativo para distribuições assimétricas.
+✔️ Mais robusto que o desvio padrão e o desvio médio tradicional.
+
+❌ Desvantagens:
+❌ Menos utilizado em estatísticas clássicas, já que o desvio padrão é mais comum.
+❌ Pode ser mais difícil de calcular manualmente, pois exige ordenar os valores.
+❌ Não tem a mesma interpretação estatística que o desvio padrão para distribuições normais.
+
+<h3>Qual escolher</h3>
+<ul>
+      <li>Desvio Médio (DM): Para análises simples e de fácil interpretação.	</li>
+      <li>Desvio Padrão (DP): Para estatísticas inferenciais, quando a distribuição for normal ou próxima de normal.</li>
+      <li>Desvio Médio com Moda (DMm): Quando a distribuição for muito assimétrica(significa que os dados estão mais concentrados em um dos lados) e a moda representar melhor os dados.</li>
+      <li>Desvio Absoluto Mediano (DAM): Quando há muitos outliers e se deseja uma medida mais robusta.</li>
+</ul>
+
+<h3>Assimetria em Estatística 📊</h3>
+A assimetria mede o grau de distorção ou inclinação da distribuição dos dados em relação a uma distribuição simétrica (como a Normal).
+
+Se uma distribuição for simétrica, significa que os dados estão distribuídos de maneira equilibrada em torno da média. Já se houver assimetria, significa que os dados estão mais concentrados em um dos lados.
+
+<h4>Tipos de Assimetria</h4>
+1️⃣ Assimetria Positiva (ou à direita) → "Cauda longa à direita"
+📈 A cauda direita (valores maiores) é mais longa, indicando que há alguns valores muito altos puxando a média para cima.
+Exemplo: Salários em uma empresa, onde poucas pessoas ganham muito mais que a maioria.
+Ordem típica das medidas centrais:
+
+Moda < Mediana < Média
+
+2️⃣ Assimetria Negativa (ou à esquerda) → "Cauda longa à esquerda"
+📉 A cauda esquerda (valores menores) é mais longa, indicando que há valores muito baixos puxando a média para baixo.
+Exemplo: Notas de uma prova muito fácil, onde poucos alunos tiram notas muito baixas.
+Ordem típica das medidas centrais:
+
+Média < Mediana < Moda
+
+3️⃣ Distribuição Simétrica (Assimetria Zero) → "Forma de sino"
+🔔 A distribuição é equilibrada, sem caudas mais longas de um lado do que do outro.
+Exemplo: Altura da população adulta, onde os valores estão distribuídos de maneira equilibrada.
+Ordem das medidas centrais:
+
+Média = Mediana = Moda 
+
+Como Medir a Assimetria?
+A assimetria pode ser quantificada pelo coeficiente de assimetria de Pearson:
+
+Assimetria= 3×( Média - Mediana)/𝜎
+
+<ul>
+      <li>Se for positivo, temos assimetria positiva.</li>
+      <li>Se for negativo, temos assimetria negativa.</li>
+      <li>Se for próximo de zero, a distribuição é aproximadamente simétrica.</li>
+</ul>
+
