@@ -431,3 +431,17 @@ Assimetria= 3×( Média - Mediana)/𝜎
       <li>Se for próximo de zero, a distribuição é aproximadamente simétrica.</li>
 </ul>
 
+Utilizando o pandas para calcular desvio médio e padrão:
+
+df["valores"].mad() → Calcula o desvio médio (MAD no Pandas).
+
+df["valores"].std(ddof=0) → Calcula o desvio padrão populacional. (Se for amostral, use ddof=1.)
+
+<h3>Exercicio 5- Problemas</h3>
+<p>Eu acredito que a mediana não seja uma boa forma de medir, pois o valor central não será capaz de apresentar toda a variação presente no conjunto de dados e a média será mais ideal porém acredito que irá apresentar um número muito alto, pois a assimetria é positiva tendo muito números extremos positivos.</p>
+
+<h4>Resposta Chat GPT</h4>
+Se você quer uma medida robusta que não seja afetada pelos extremos, prefira a mediana. Se você precisa da tendência central geral, mas pode lidar com distorções, a média pode ser útil.
+
+<h3>Exercicio 6 C- Problemas</h3>
+O problema para calcular a média é que não possuimos o valor exato de filhos da última linha da tabela só sabemos que 5 famílias tem mais de 5 filhos porém não sabemos a quantidade exata.
