@@ -445,3 +445,69 @@ Se você quer uma medida robusta que não seja afetada pelos extremos, prefira a
 
 <h3>Exercicio 6 C- Problemas</h3>
 O problema para calcular a média é que não possuimos o valor exato de filhos da última linha da tabela só sabemos que 5 famílias tem mais de 5 filhos porém não sabemos a quantidade exata.
+
+<h3>3.3 Quartis Empíricos</h3>
+Tanto a média como o desvio padrão podem não ser medidas adequadas para representar um conjunto de dados, pois:
+<ol>
+      <li>Sâo afetados, de forma exagerada, por valores extremos.</li>
+      <li>Apsena com estes dois valores não temos ideia da simetria ou assimetria da distribuição dos dados.</li>
+</ol>
+
+Podemos definir uma medida , chamada quantil de ordem p ou p-quartil, indicada por q(p), em que p é uma proporção qualquer, 0 < p < 1.
+q(0,25)= q1: 1º Quartil = 25 Percentil
+
+q(0,5)= q2: Mediana= 2º Quartil= 50 Percentil
+
+q(0,75)= q3: 3ºQuartil= 75 Percentil
+
+q(0,4): 4º Decil
+
+q(0,95): 95º Percentil
+
+Dizemos que a mediana é resistente (ou robusta), no sentido que ela não é muito afetada pelo valor discrepante.
+
+Se od dados estiverem agrupados em classes , podemos obter os quantis usando o histograma . Por exemplo, para obter a mediana, sabemos que ela deve corresponder ao valor da abscissa que divide a àrea do histograma em duas partes iguais(50% para cada lado).
+Exemplo se pegarmos um histograma dividido em porcentagens e buscamos o ponto em que chegamos a metade dele, devemos analisar a somatória das classes, em um caso em que a soma das duas primeiras classes é igual a 61% sendo 28% da primeira barra e 33% da segunda, sabemos que a mediana esta na dentro da segunda barra. Então fazemos o cálculo:
+12-8/ 33%= mediana- 8/ 22%
+
+ou 
+
+md-8= (22%/33%)x4
+
+logo
+
+md= 8+ 2.67= 10,67
+
+O cálculo dos quantis pode ser feito de forma similar a este cálculo da mediana.
+Exemplos
+1.q(0,25) verificamos que 2(0,25) esta na primeira classe, pois a proporção no primeiro retângulo é 0,28.
+q(0,25)- 4/ 25%= 8-4/28%
+
+logo
+
+q(0,25)= 4+ (25/28) x 4= 7,57
+
+Uma medida de dispersão alternativa ao desvio padrão é a distância interquartil, definida como a diferença entre o terceiro e primeiro quartis, ou seja: dq=q3- q1.
+
+A distância interquartil (IQR - Interquartile Range) é uma medida de dispersão estatística que indica a variação central de um conjunto de dados, excluindo valores extremos. Ela é calculada como a diferença entre o terceiro quartil (𝑄3) e o primeiro quartil (𝑄1)
+
+O que são os quartis?
+Os quartis dividem um conjunto de dados ordenado em quatro partes iguais:
+<ul>
+      <li>𝑄1(Primeiro Quartil): É o valor abaixo do qual estão 25% dos dados.</li>
+      <li>𝑄2(Mediana): É o valor central, onde 50% dos dados estão abaixo e 50% acima.</li>
+      <li>𝑄3(Terceiro Quartil): É o valor abaixo do qual estão 75% dos dados.</li>
+</ul>
+
+Para que serve o IQR?
+
+Identificar outliers: Normalmente, valores abaixo de 𝑄1−1.5×IQR ou acima de Q3+1.5×IQR são considerados outliers.
+
+Medir a dispersão central: Como o IQR exclui valores extremos, ele é mais robusto do que a amplitude total dos dados.
+
+Exemplo de cálculo
+Dado o conjunto ordenado de dados: [2,4,5,7,8,10,12,15,18,20]
+
+Q1= 5.5 (média entre 5 e 7).
+Q3= 14 (média entre 12 e 15).
+IQR= 14- 5.5= 8.5
