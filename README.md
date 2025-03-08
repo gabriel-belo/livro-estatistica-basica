@@ -528,9 +528,13 @@ IQR= 14- 5.5= 8.5
 Dizemos que uma medida de localização ou dispersão é resistente quando for pouco afetada por mudanças de uma pequena porção dos dados.
 
 Os cinco valores x1, q1, q2, q3 3 xn, são importantes para ter uma boa ideia da assimetria da distribuição dos dados. Para uma distrivbuição simétrica ou aproximadamente simétrica, deveriamos ter:
-<ul>
-      <li>q2- x1 ≈ xn - q2 </li>
-      <li></li>
-      <li></li>
-      <li></li>
-</ul>
+<ol>
+      <li>q2- x1 ≈ xn - q2</li>
+      <li>q2 - q1 ≈ q3 - q2</li>
+      <li>q2 - x1 ≈ xn - q3</li>
+      <li>Distância entre mediana e q1, q3 menor do que  distância entre os extremos e q1.</li>
+</ol>
+
+A diferença q2- x1 é chamada disperção inferior e xn - q2 é a dispersão superior.
+
+A primeira condição nos diz que as duas dispersões devem ser aproximadamente iguais, para uma distribuição ser aproximadamente simétrica.
