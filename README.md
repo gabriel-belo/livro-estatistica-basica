@@ -466,7 +466,20 @@ q(0,95): 95º Percentil
 
 Dizemos que a mediana é resistente (ou robusta), no sentido que ela não é muito afetada pelo valor discrepante.
 
-Se od dados estiverem agrupados em classes , podemos obter os quantis usando o histograma . Por exemplo, para obter a mediana, sabemos que ela deve corresponder ao valor da abscissa que divide a àrea do histograma em duas partes iguais(50% para cada lado).
+<h3>Uma forma de contar os quartis</h3>
+Fórmulas para encontrar os quartis
+Se temos um conjunto de dados ordenado de tamanho 𝑛:
+
+O Q1 está na posição  𝑃= 𝑛+1/4
+
+​O Q2 está na posição  𝑃=2(𝑛+1)/4 (ou seja, a mediana)
+
+O Q3 está na posição 𝑃=3(𝑛+1)/4​
+ 
+Se a posição encontrada for um número inteiro, usamos o valor exato. Se for um número decimal, fazemos uma interpolação entre os valores vizinhos, ou seja, procuramos a media entre os valores que ocupam essas posições.
+
+<h3>Outra forma de obter os quantis</h3>
+Se os dados estiverem agrupados em classes , podemos obter os quantis usando o histograma . Por exemplo, para obter a mediana, sabemos que ela deve corresponder ao valor da abscissa que divide a àrea do histograma em duas partes iguais(50% para cada lado).
 Exemplo se pegarmos um histograma dividido em porcentagens e buscamos o ponto em que chegamos a metade dele, devemos analisar a somatória das classes, em um caso em que a soma das duas primeiras classes é igual a 61% sendo 28% da primeira barra e 33% da segunda, sabemos que a mediana esta na dentro da segunda barra. Então fazemos o cálculo:
 12-8/ 33%= mediana- 8/ 22%
 
@@ -511,3 +524,13 @@ Dado o conjunto ordenado de dados: [2,4,5,7,8,10,12,15,18,20]
 Q1= 5.5 (média entre 5 e 7).
 Q3= 14 (média entre 12 e 15).
 IQR= 14- 5.5= 8.5
+
+Dizemos que uma medida de localização ou dispersão é resistente quando for pouco afetada por mudanças de uma pequena porção dos dados.
+
+Os cinco valores x1, q1, q2, q3 3 xn, são importantes para ter uma boa ideia da assimetria da distribuição dos dados. Para uma distrivbuição simétrica ou aproximadamente simétrica, deveriamos ter:
+<ul>
+      <li>q2- x1 ≈ xn - q2 </li>
+      <li></li>
+      <li></li>
+      <li></li>
+</ul>
