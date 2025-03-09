@@ -538,3 +538,25 @@ Os cinco valores x1, q1, q2, q3 3 xn, são importantes para ter uma boa ideia da
 A diferença q2- x1 é chamada disperção inferior e xn - q2 é a dispersão superior.
 
 A primeira condição nos diz que as duas dispersões devem ser aproximadamente iguais, para uma distribuição ser aproximadamente simétrica.
+
+<h4>Tolerância</h4>
+Quando comparamos as diferenças nos quartis para verificar a simetria de uma distribuição, queremos saber se essas diferenças são próximas o suficiente. Mas o que significa "próximo" em termos numéricos?
+
+<h4>Por que definir uma tolerância?</h4>
+<ul>
+      <li>Pequenas variações sempre existirão devido a flutuações nos dados.</li>
+      <li>Em distribuições reais, raramente teremos valores exatamente iguais, então precisamos definir um limite aceitável de diferença.</li>
+</ul>
+
+<h4>Cálculo da Tolerância</h4>
+A amplitude total dos dados é a diferença entre o maior e o menor valor: Amplitude= Xn − X1, onde:
+
+𝑋1 é o valor mínimo (menor dado).
+
+𝑋𝑛 é o valor máximo (maior dado).
+
+Uma boa regra prática para definir a tolerância é considerar um percentual da amplitude total. No código, usamos 10%:
+
+tolerancia = 0.1 * (xn - x1)  # 10% da amplitude total
+
+Isso significa que duas diferenças serão consideradas próximas se a diferença entre elas for menor que 10% da amplitude total dos dados.
