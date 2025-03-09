@@ -535,6 +535,27 @@ Para que serve o IQR?
 
 Identificar outliers: Normalmente, valores abaixo de 𝑄1−1.5×IQR ou acima de Q3+1.5×IQR são considerados outliers.
 
+<h4>Dispersão Inferior e Superior</h4>
+🔸 O exercício está pedindo para você calcular a dispersão abaixo de Q1 e acima de Q3, geralmente usadas para identificar outliers.
+
+👉 Dispersão Inferior
+É a distância entre o primeiro quartil (Q1) e o limite inferior da "área de dados aceitável".
+
+Fórmula do limite inferior: Limite Inferior = Q1 - 1.5 × IQR
+
+Essa região abaixo de Q1 (até o limite inferior) é chamada de dispersão inferior.
+
+👉 Dispersão Superior
+
+É a distância entre o terceiro quartil (Q3) e o limite superior da "área de dados aceitável".
+
+Fórmula do limite superior: Limite Superior = Q3 + 1.5 × IQR
+
+Essa região acima de Q3 (até o limite superior) é chamada de dispersão superior.
+
+✅ O que isso significa na prática?
+Dispersão Inferior → Parte dos dados abaixo de Q1, especialmente se caírem abaixo do limite inferior → potenciais outliers inferiores.
+Dispersão Superior → Parte dos dados acima de Q3, especialmente se estiverem acima do limite superior → potenciais outliers superiores.
 Medir a dispersão central: Como o IQR exclui valores extremos, ele é mais robusto do que a amplitude total dos dados.
 
 Exemplo de cálculo
