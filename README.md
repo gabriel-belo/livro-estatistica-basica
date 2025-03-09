@@ -560,3 +560,59 @@ Uma boa regra prática para definir a tolerância é considerar um percentual da
 tolerancia = 0.1 * (xn - x1)  # 10% da amplitude total
 
 Isso significa que duas diferenças serão consideradas próximas se a diferença entre elas for menor que 10% da amplitude total dos dados.
+
+Analisando a Simetria e Assimetria nos Cálculos
+Os três cálculos fornecidos podem indicar simetria ou assimetria em pontos específicos da distribuição. Cada um deles analisa uma parte diferente da estrutura dos dados, o que permite detectar onde a assimetria ocorre.
+
+1️⃣ <h4>Mediatriz da Distribuição:</h4>
+
+𝑞2 −𝑥1 ≈ 𝑥𝑛 − 𝑞2
+​
+O que esse cálculo verifica?
+
+Compara a distância da mediana (𝑞2) até o mínimo (𝑥1) com a distância da mediana até o máximo (𝑥𝑛).
+ 
+Se os dois valores forem aproximadamente iguais, significa que a distribuição tem simetria geral.
+
+Se houver uma diferença significativa, sugere uma assimetria global (skewness para a esquerda ou direita).
+
+✅ Se q2 − x1 ≈ xn − q2→ Indica que os dados são simétricos em relação à mediana.
+  
+⚠️ Se q2−x1 ≠ xn− q2→ Pode indicar uma cauda mais longa de um lado (distribuição assimétrica).
+
+🔹 Exemplo de Assimetria:
+Se q2 − x1for muito menor que  xn − q3, significa que os valores maiores estão mais espalhados → assimetria à direita.
+
+
+2️⃣ <h4>Simetria nos Quartis:</h4> 
+𝑞2 − 𝑞1 ≈ 𝑞3 − 𝑞2
+ 
+O que esse cálculo verifica?
+
+Compara a distância entre a mediana e o primeiro quartil (q1) com a distância entre a mediana e o terceiro quartil (𝑞3).
+
+Se essas distâncias forem iguais, os quartis estão simetricamente distribuídos em torno da mediana.
+
+Se forem diferentes, a distribuição é assimétrica nos valores centrais.
+
+✅ Se  𝑞2 − 𝑞1 ≈ q3 − q2 → Os dados próximos da mediana são simétricos.
+  
+⚠️ Se  q2 − q1≠ q3 − q2→ Há assimetria nos valores centrais.
+
+🔹 Exemplo de Assimetria:
+Se q2 − q1 for menor que q3 − q2, significa que há mais valores concentrados no lado esquerdo → assimetria à direita.
+
+3️⃣ Equilíbrio Entre os Extremos e os Quartis: 
+𝑞2 - 𝑥1 ≈xn − q3 
+O que esse cálculo verifica?
+
+Analisa a simetria entre a parte inferior e superior da distribuição.
+
+Compara a distância entre o mínimo (𝑥1) e a mediana (𝑞2) com a distância entre o máximo (𝑥𝑛) e o terceiro quartil (𝑞3).
+
+✅ Se 𝑞2 - 𝑥1 ≈ xn − q3 → Os extremos e quartis estão distribuídos de forma simétrica.
+  
+⚠️ Se  𝑞2 − 𝑥1 ≠ xn − q3 → Há assimetria nos extremos da distribuição.
+
+🔹 Exemplo de Assimetria:
+Se q2 − x1 for menor que  xn − q3, significa que há valores extremos mais espalhados para a direita → assimetria à direita.
