@@ -651,8 +651,31 @@ Analisa a simetria entre a parte inferior e superior da distribuição.
 Compara a distância entre o mínimo (𝑥1) e a mediana (𝑞2) com a distância entre o máximo (𝑥𝑛) e o terceiro quartil (𝑞3).
 
 ✅ Se 𝑞2 - 𝑥1 ≈ xn − q3 → Os extremos e quartis estão distribuídos de forma simétrica.
-  
+   
 ⚠️ Se  𝑞2 − 𝑥1 ≠ xn − q3 → Há assimetria nos extremos da distribuição.
 
 🔹 Exemplo de Assimetria:
 Se q2 − x1 for menor que  xn − q3, significa que há valores extremos mais espalhados para a direita → assimetria à direita.
+
+
+<h3>Box Plots</h3>
+É um diagrama que representa o esquema dos cinco números
+
+Neste diagrama consideramos um retângulo em que estão representadas a mediana e os quartis. A partir do retângulo, para cima, segue uma linha até o ponto mais remoto que não exceda LS= q3 + 1.5 * IQR(dq), limite superior. De modo similar, da parte inderior do retângulo, para baixo, segue uma linha até o ponto mais remoto que não  seja menor do que LI= q1 - 1.5 * IQR(dq), limite inferior. As observações que estiverem compreendidas acima do limite superior ou abaixo do limite inferior estabelecidos serão chamados pontos exteriores e representados por círculos ou asteriscos.
+
+A posição central é dada pela mediana(q2) e a dispersão por dq.
+
+Do ponto de vista estatístico, um outlier pode ser produto de um erro de obsercvação ou de arredondamento, ou simplesmente, são valores muito discrepantes.
+
+Para dados com uma distribuição normal(simétrica), os pontos exteriores constituirão cerca de 0,7% da distribuição.
+
+<h3>3.5 Gráficos de Simetria</h3>
+Os quantis podem ser úteis para verificar se a distribuição dos dados é simétrica (ou aproximadamente simétrica)
+
+Se um conjunto de observações for perfeitamente simétrico devemos ter:
+
+q(0,5) - x(i) = x(n+ 1 - i) - q(0,5)
+
+Em que i= 1,2, ..., n/2, se n for par e i= 1, 2, ..., (n+1)/2, se n for ímpar.
+
+Se os quantis da direita esão mais afastados da mediana, do que os da esquerda, os dados serão assimétricos à direita. Se ocorrer o contrário os dados serão assimétricos a esquerda. Assimetria a direita normalmente ocorre com os números positivos.
