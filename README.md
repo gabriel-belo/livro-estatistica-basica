@@ -679,3 +679,94 @@ q(0,5) - x(i) = x(n+ 1 - i) - q(0,5)
 Em que i= 1,2, ..., n/2, se n for par e i= 1, 2, ..., (n+1)/2, se n for ímpar.
 
 Se os quantis da direita esão mais afastados da mediana, do que os da esquerda, os dados serão assimétricos à direita. Se ocorrer o contrário os dados serão assimétricos a esquerda. Assimetria a direita normalmente ocorre com os números positivos.
+
+Exemplo em código em praticas/calculoSimetria
+
+<h3>3.6 Transformações</h3>
+Vários procedimentos estatísticos são baseados na suposição de que os dados provem de uma distribuição normal (em forma de sino) ou então mais ou menos simétrica. Mas em muitas situações de interesse prático, a distribuição dos dados da amostra é assimétrico.
+
+Se quisermos utilizar tais procedimentos, o que se propõe é efetuar uma transformação das observações, de modo a se obter uma distribuição mais simétrica e próxima da normal. Uma família de transformações frequentemente utilizada é:
+
+A fórmula:
+
+x^(p) = 
+    x^p       , se p > 0
+    ln(x)     , se p = 0
+    -x^p      , se p < 0
+
+    
+Essa fórmula pertence à família das transformações de potência (ou Power Transformations), usada para:
+<ul>
+      <li>Corrigir a assimetria de uma distribuição de dados;</li>
+      <li>Tornar dados mais parecidos com a distribuição normal (o famoso "bell curve");</li>
+      <li>Melhorar a performance de modelos estatísticos ou machine learning que assumem normalidade.</li>
+</ul>
+
+A distribuição normal (ou curva de sino, "bell curve") é uma das distribuições mais importantes da estatística. Ela é simétrica, com a maior parte dos dados concentrados no centro (na média) e poucas ocorrências nos extremos (nas caudas).
+
+Ela altera a escala dos dados de forma não linear, para que distribuições assimétricas (com caudas longas de um lado) fiquem mais simétricas. Alterar a escala de forma não linear quer dizer que você está mudando a distância entre os dados, mas não proporcionalmente.
+
+<h4>Como ela funciona</h4>
+É uma família de funções controladas por um parâmetro p que você pode ajustar para diferentes efeitos:
+
+Quando p > 0: Você eleva os dados a uma potência p.
+Exemplo:
+<ul>
+      <li>Se p = 0.5, você está extraindo a raiz quadrada dos valores (diminui a diferença entre valores grandes e pequenos, suavizando caudas à direita).</li>
+      <li>Se p = 2, você acentua os valores grandes, alongando a cauda à direita.</li>
+</ul>
+
+Quando p = 0: Você aplica o logaritmo natural aos dados.
+O log(x) suaviza bastante valores altos, puxando-os para baixo. 
+Isso é útil quando você tem cauda longa à direita (assimetria positiva).
+
+
+Quando p < 0: Você eleva x à potência p (como se fosse o caso positivo), mas inverte o sinal, ou seja, você reflete os valores.
+Exemplo:
+Se p = -1, você faz -x^-1 = -(1/x), invertendo os valores.
+Essa inversão ajuda com distribuições com cauda longa à esquerda (assimetria negativa).
+
+<h4>Por que isso ajuda?</h4>
+Essas transformações ajustam a curtose (achatamento) e assimetria dos dados.
+Elas podem aproximar a normalidade, que é um pré-requisito para muitos procedimentos estatísticos como:
+<ul>
+   <li>ANOVA</li>
+   <li>Regressão linear clássica</li>
+   <li>Testes paramétricos</li>
+</ul>
+
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th>Valor de p</th>
+      <th>Efeito esperado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p &gt; 1</td>
+      <td>Aumenta a assimetria à direita (não é comum usar)</td>
+    </tr>
+    <tr>
+      <td>0 &lt; p &lt; 1</td>
+      <td>Diminui assimetria à direita (caudas positivas)</td>
+    </tr>
+    <tr>
+      <td>p = 0</td>
+      <td>Aplica log, reduz assimetria à direita ainda mais</td>
+    </tr>
+    <tr>
+      <td>p &lt; 0</td>
+      <td>Corrige assimetria à esquerda (caudas negativas), refletindo os dados</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Isso é parte de:</h4>
+<ul>
+      <li>Box-Cox Transformation (requer dados positivos)</li>
+      <li>Yeo-Johnson Transformation (aceita zero e valores negativos)</li>
+</ul>
+
+Ambas são versões estendidas dessa lógica de potência, usadas em estatística e machine learning!
