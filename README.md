@@ -726,6 +726,10 @@ Exemplo:
 Se p = -1, você faz -x^-1 = -(1/x), invertendo os valores.
 Essa inversão ajuda com distribuições com cauda longa à esquerda (assimetria negativa).
 
+Normalmnete, o que se faz é experimentar valores de p na sequência:
+..., -3, -2, -2, -1, -1/2, -1/3, 0, 1/3, 1/2, 1, 2, 3, ...
+
+E para cada valor de p obtemos gráficos apropriados(histograma, box plot ...) para os dados originais e transformados, de modo a escolhermos o valor mais adequado de p.
 <h4>Por que isso ajuda?</h4>
 Essas transformações ajustam a curtose (achatamento) e assimetria dos dados.
 Elas podem aproximar a normalidade, que é um pré-requisito para muitos procedimentos estatísticos como:
