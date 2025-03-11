@@ -750,7 +750,7 @@ Elas podem aproximar a normalidade, que é um pré-requisito para muitos procedi
   <tbody>
     <tr>
       <td>p &gt; 1</td>
-      <td>Aumenta a assimetria à direita (não é comum usar)</td>
+      <td>Para distribuições assimétricas a esquerda</td>
     </tr>
     <tr>
       <td>0 &lt; p &lt; 1</td>
