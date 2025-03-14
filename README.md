@@ -774,3 +774,96 @@ Elas podem aproximar a normalidade, que é um pré-requisito para muitos procedi
 </ul>
 
 Ambas são versões estendidas dessa lógica de potência, usadas em estatística e machine learning!
+
+<h3>3.8 Problemas e Complementos</h3>
+<h4>Exericio 14</h4>
+a)
+1. Σ(𝑥𝑖−𝑥)=0
+Quando aplicar?
+<ul>
+      <li>Essa é uma propriedade fundamental da média aritmética.</li>
+      <li>Sempre é verdadeira quando você calcula a média simples de qualquer conjunto de dados.</li>
+</ul>
+
+
+Onde usar?
+<ul>
+      <li>Prova de que a média é o ponto de equilíbrio dos dados.</li>
+      <li>Verificação de cálculos: quando você calcula todas as diferenças entre os valores e a média, e soma tudo, o resultado tem que ser zero.</li>
+      <li>Mais conceitual, não se usa para calcular variância/desvio, mas para entender a média.</li>
+</ul>
+
+b)
+2.Σ(xi− x)²= Σxi² − nx² = Σxi²− ((Σxi)²/n)
+
+Quando aplicar?
+<ul>
+      <li>Para calcular a soma dos quadrados dos desvios em relação à média.</li>
+      <li>Antes de calcular a variância ou o desvio padrão em um conjunto de dados simples (não agrupado).</li>
+</ul>
+
+
+Onde usar?
+<ul>
+      <li>Quando você tem todos os valores individuais 𝑥𝑖.</li>
+</ul>
+
+Você já tem:
+<ul>
+      <li>A soma dos valores Σ𝑥i</li>
+      <li>A soma dos quadrados dos valores Σ𝑥𝑖²</li>
+      <li>O número de elementos n</li>
+</ul>
+
+Atalho para variância:
+Depois de calcular isso, divide por 𝑛 ou n−1 para ter a variância.
+
+c)
+3.Σni (xi - x)²  =Σni xi² − nx²
+
+Lado esquerdo: Σni (xi - x)² 
+
+Representa a soma dos quadrados dos desvios da média ponderada.
+
+<ul>
+      <li>É a parte bruta do cálculo para variância e desvio padrão.</li>
+      <li>𝑛𝑖: frequência de cada valor 𝑥𝑖.</li>
+      <li>(𝑥𝑖 − 𝑥)²: o desvio quadrado em relação à média.</li>
+</ul>
+
+d)
+4.Σfi(xi − x)² =Σfi.xi²− x²
+
+O que ela significa?
+<ul>
+      <li>Lado esquerdo: é a soma dos quadrados dos desvios em relação à média (ponderada pelas frequências (𝑓𝑖).</li>
+      <li>Lado direito: é uma forma alternativa de calcular essa soma usando:</li>
+      <ul>
+            <li>Soma dos produtos das frequências pelos quadrados dos valores</li>
+            <li>E o quadrado da média aritmética ponderada.</li>
+      </ul>
+</ul>
+
+Importante: Essa fórmula não te dá a variância direto. Ela te dá a soma dos quadrados dos desvios.
+👉 Depois você tem que dividir pelo total de frequências (n ou n−1, se for amostra) para achar a variância.
+
+Quando usar essa fórmula?
+
+1. Dados agrupados (com frequências): Sempre que você estiver lidando com dados agrupados em uma distribuição de frequência.
+
+2. Para calcular a variância ou o desvio padrão de dados agrupados:
+<ul>
+      <li>Você vai precisar da soma dos quadrados dos desvios.</li>
+      <li>Essa fórmula evita que você tenha que calcular (𝑥𝑖− x)² para cada linha da tabela.</li>
+</ul>
+
+👉 Mais prático, principalmente quando você já tem Σ𝑓ixi².
+ 
+Lado direito (a parte que facilita a vida):Σfi.xi²− x²
+
+👉 Representa a mesma coisa, só que sem precisar calcular os desvios um por um.
+ 
+​
+
+
+
