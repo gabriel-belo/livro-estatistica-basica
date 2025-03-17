@@ -875,4 +875,28 @@ f = frequência absoluta de cada classe.
 
 x = média ponderada que você já calculou (deu 51.2).
 
+<h4>Exercicio D</h4>
+O que significa a expressão x - 2s e x + 2s?
 
+    x é a média dos dados.
+    s é o desvio padrão dos dados.
+    x - 2s é dois desvios padrão abaixo da média.
+    x + 2s é dois desvios padrão acima da média.
+
+🔸 Intervalo:
+👉 O intervalo [x - 2s, x + 2s] representa a faixa de valores que ficam até dois desvios padrão de distância da média.
+
+Quer saber quantos dados (ou qual a porcentagem das observações) caem dentro desse intervalo.
+
+
+<h4>Exercicio 17</h4>
+de acordo com valor total(n) podemos usar esta formula para descrever os quantis
+Fe(xi)= i/9, dado que i= 1, 2, 3, ... 9.
+Então n = 9 neste caso.
+
+Em particular Fe(md)= F(x5)= Fe(8)= 5/9= 0,556. Portanto, ou mudamos nossa definição de mediana ou Fe(.) não pode ser usada para definir precisamente mediana ou, em geral, um quantil q(p).
+
+Explicação do porque devemos mudar a forma com que consideramos mediana ou procurar outra forma neste caso:
+Eles estão usando Fe(xi) = i / n como uma aproximação para definir a frequência acumulada.
+Mas com n pequeno, como n = 9, isso não encaixa bem com o que esperamos de uma mediana.
+Se você seguir essa lógica, o 5º valor já tem uma frequência acumulada de 0,556, passando do 0,5, o que pode gerar imprecisão na definição da mediana.
