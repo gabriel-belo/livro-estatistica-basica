@@ -863,7 +863,16 @@ Lado direito (a parte que facilita a vida):Σfi.xi²− x²
 
 👉 Representa a mesma coisa, só que sem precisar calcular os desvios um por um.
  
+​<h3>Exercicio 16</h3>
+<h4>Exercicio C</h4>
+Fórmula do Desvio Padrão para Dados Agrupados: 𝜎 = ∑𝑓⋅(𝑥𝑖 − 𝑥)² / ∑𝑓 
 ​
+Onde:
 
+f = frequência absoluta de cada classe.
+
+𝑥𝑖= ponto médio da classe. 
+
+x = média ponderada que você já calculou (deu 51.2).
 
 
