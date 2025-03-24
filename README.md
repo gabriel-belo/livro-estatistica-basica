@@ -900,3 +900,14 @@ Explicação do porque devemos mudar a forma com que consideramos mediana ou pro
 Eles estão usando Fe(xi) = i / n como uma aproximação para definir a frequência acumulada.
 Mas com n pequeno, como n = 9, isso não encaixa bem com o que esperamos de uma mediana.
 Se você seguir essa lógica, o 5º valor já tem uma frequência acumulada de 0,556, passando do 0,5, o que pode gerar imprecisão na definição da mediana.
+
+<h4>Exercício 20</h4>
+Utilizando a função .apply() para aplicar funções def específicas sobre colunas em um data frame, exemplo:
+dados['Frequência absoluta']= dados['Frequência relativa'].apply(frequenciaAbsoluta)
+
+Utlizamos também a função findall biblioteca re para converter os valores da linhas que estavam em strings em lista com os valores separados e depois transformamos os valores em inteiros, exemplo: 
+numeros = re.findall(r'\d+', intervalo)
+
+A expressão r'\d+' procura todos os números inteiros (um ou mais dígitos) na string. \d significa "qualquer dígito de 0 a 9". + significa "um ou mais desses dígitos".
+
+
