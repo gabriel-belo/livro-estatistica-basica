@@ -1,0 +1,2 @@
+A média e mediana sofrem variação, pois os valores presentes neste grupo de dados vão dobra então a média e mediana
+irão dobrar também, porém o desvio padrão irá se manter o mesmo, pois ele representa a disperção

@@ -1,0 +1,3 @@
+Ocorrerá variação da média e mediana pois elas representam os valores então como irá ocorrer variação dos
+valores elas iram sofrer impacto, já a variância como representa a dispersão dos dados e todos eles cresceram
+na mesma proporção, então não ocorrerá mudança na variância
