@@ -911,3 +911,40 @@ numeros = re.findall(r'\d+', intervalo)
 A expressão r'\d+' procura todos os números inteiros (um ou mais dígitos) na string. \d significa "qualquer dígito de 0 a 9". + significa "um ou mais desses dígitos".
 
 
+<h4>Exercicio 24 D</h4>
+Calculo da média ponderada para dados agrupados:
+X=∑(Xi​×fi​)/N​
+
+Onde:
+<ul>
+      <li>Xi​ = Ponto médio da classe</li>
+      <li>fi​ = Frequência absoluta da classe</li>
+      <li>N = Total de observações (soma das frequências absolutas)</li>
+</ul>
+
+
+Cálculo da variância para classes agrupadas:
+σ²=∑fi​(Xi​−Xˉ)²/
+
+<h4>Exercicio 25 D</h4>
+Função de distribuição acumulada(FDA):A Função de Distribuição Acumulada (FDA) de uma variável aleatória representa a probabilidade acumulada de que um valor seja menor ou igual a um determinado valor. A FDA nos dá a probabilidade cumulativa até um certo valor.
+
+Seja X uma variável aleatória, a FDA é definida como:
+F(x)=P(X≤x)
+
+🔹 Frequência Relativa → mostra a proporção individual de cada classe.
+🔹 Distribuição Acumulada → soma cumulativa das frequências relativas.
+
+<h4>Exercício 26</h4>
+Buscando a moda em em dados agrupados em classes:
+
+classe_modal = dados.loc[dados['Frequência'].idxmax(), 'Faixa Salarial']
+
+Aqui acontece o seguinte:
+dados['Frequência'].idxmax()
+🔹Retorna o índice da maior frequência.
+📌 Exemplo: Como 15 é o maior valor na coluna "Frequência", o índice retornado é 1.
+
+dados.loc[1, 'Faixa Salarial']
+🔹 Localiza a classe salarial correspondente a esse índice.
+📌 No exemplo, retorna "[2-4)", que é a classe modal.
