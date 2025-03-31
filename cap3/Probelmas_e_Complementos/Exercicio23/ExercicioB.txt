@@ -1,0 +1,2 @@
+Eu acredito que a medida que melhor descreve os dados é a mediana, pois apresenta um valor o qual tem a maioria dos
+valores em sua proximidade, e também porque a media sofre impacto de alguns valores bem altos.

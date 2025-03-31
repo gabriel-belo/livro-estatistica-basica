@@ -1,0 +1,5 @@
+- A coluna 'Faixa salarial' possui dados agrupados do tipo quantitativa continua, pois esses dados ordenam
+os salários em classes que podem ir por exemplo de 0 a 1.999,99 tendo assim valores específicos dentro de um intervalo.
+
+-A coluna 'frequência' possui dados do tipo quantitativo discreto representa a quantidade de pessoal , sendo assim
+valores inteiros.

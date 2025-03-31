@@ -1,0 +1,5 @@
+Com essas informações da companhia B e as informações da companhia A, analisando de forma financeira é
+maior a probabilidade de receber um maior salário da companhia B pois sua média parece condizer mais, já que sua
+variância é praticamente zero, fazendo assim com que não tenha a presença de muitos outliers, então dessa forma
+a maioria dos empregos recebe por volta de 7.000 diferente da companhia A que possui alguns salários bem mais altos
+que outros criando a maior possibilidade de receber um salário abaixo de 5.000.

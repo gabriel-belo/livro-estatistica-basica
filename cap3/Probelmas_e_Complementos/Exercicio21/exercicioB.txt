@@ -1,1 +1,2 @@
-Se somamos um valor constante C a todos os dados, a nova média será Mas os desvios de cada valor em relação à média continuarão os mesmos:
+Se somarmos um valor constante C a todos os dados, a nova média será 10 maior que a atual, mas os desvios de cada valor em relação à média continuarão os
+mesmos

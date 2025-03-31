@@ -1,0 +1,7 @@
+Se substrair-mos a média geral de cada observação teremos a diferença entre a observação e a média, e estes
+valores iram gerar impacto na mediana e media, principalmente na mediana, já o desvio padrão vai se manter o mesmo,
+pois a variação nos valores é similar em todos.
+
+Quando você pega um conjunto de números e subtrai a média de cada um, está apenas "deslocando" os dados para que fiquem centralizados em torno de zero. Isso significa que:
+    A média sempre se torna zero (porque estamos retirando exatamente a média de todos os números).
+    O desvio padrão não muda, porque a distância entre os números continua a mesma. Só estamos deslocando todos os pontos na reta dos números, sem alterar a variação entre eles.

@@ -1,0 +1,32 @@
+Subtrair a média e dividir pelo desvio padrão
+
+Agora, ao aplicarmos a seguinte transformação:
+Z=X−Xˉσ
+Z=σX−Xˉ​
+
+Isso é chamado de padronização (ou normalização Z-score). Essa transformação muda:
+    Média: Passa a ser zero, pois já vimos que a subtração da média centraliza os dados.
+    Mediana: Pode mudar dependendo da distribuição dos dados.
+    Desvio padrão: Agora se torna 1, pois estamos dividindo todos os valores pelo desvio padrão.
+
+Por que o desvio padrão vira 1?
+Quando dividimos por σσ, a nova variância fica:
+σZ2=σX2σX2=1
+σZ²=σX²/σX²=1
+
+Como o desvio padrão é a raiz quadrada da variância, temos:
+σZ=1
+
+Ou seja, a dispersão dos dados é reescalada para que o desvio padrão seja exatamente 1.
+Quando dividimos pelo desvio padrão, não estamos apenas deslocando os dados, estamos também mudando a escala deles.
+   O desvio padrão se torna 1 porque dividimos todas as diferenças pela sua própria medida de dispersão.
+💡 Pense em uma régua que mede em centímetros. Se você quiser converter para metros, você divide tudo por 100. Os valores mudam de escala, mas a proporção entre eles continua a mesma.
+
+ Primeiro, subtrair a média (X - média):
+    É como se você pegasse toda a fila e movesse ela para que a "pessoa média" ficasse exatamente no ponto zero.
+    Ninguém mudou de lugar em relação aos outros, só deslocamos a posição geral.
+
+🔵 Agora, dividir pelo desvio padrão (Z-score):
+    Imagine que agora todos têm que caber dentro de um espaço fixo, digamos, uma esteira que vai de -1 a 1.
+    Para isso, encolhemos ou esticamos os espaçamentos entre as pessoas proporcionalmente.
+    O resultado? Todos continuam na mesma ordem, mas agora a distância relativa entre eles sempre obedece uma nova escala: o desvio padrão vira 1.
