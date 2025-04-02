@@ -948,3 +948,20 @@ dados['Frequência'].idxmax()
 dados.loc[1, 'Faixa Salarial']
 🔹 Localiza a classe salarial correspondente a esse índice.
 📌 No exemplo, retorna "[2-4)", que é a classe modal.
+
+
+<h4>Exercicio 27 D</h4>
+Cálculo para percentil em dados agrupados:
+Pk​=L+(((N⋅k/100)−Fa​​)/f)×h
+
+Onde:
+<ul>
+      <li>Pk​ = Percentil desejado (exemplo: P25P25​ para o 1º quartil).</li>
+      <li>L = Limite inferior da classe que contém o percentil.</li>
+      <li>N = Total de observações (soma das frequências absolutas).</li>
+      <li>k = Percentil desejado (por exemplo, 25 para P25P25​).</li>
+      <li>Fa​ = Frequência acumulada antes da classe que contém o percentil.</li>
+      <li>f = Frequência absoluta da classe que contém o percentil.</li>
+      <li>h = Amplitude da classe.</li>
+      
+</ul>
