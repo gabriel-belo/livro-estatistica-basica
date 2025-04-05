@@ -1,0 +1,3 @@
+Neste exercício nós temos duas colunas de dados Cidade e Investimento
+Cidade é uma variável do tipo qualitativo nominal, pois os valores só nemiam as cidades não as ordenam
+Investimento é uma variável do tipo quantitativo disccreta, pois não possuimos casas decimais para definição dos valores

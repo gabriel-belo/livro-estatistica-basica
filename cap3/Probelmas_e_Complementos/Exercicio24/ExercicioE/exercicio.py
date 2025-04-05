@@ -28,4 +28,5 @@ h=1
 
 q1= Li +((k*fi-Fa)/f) * h
 
+
 print(q1)

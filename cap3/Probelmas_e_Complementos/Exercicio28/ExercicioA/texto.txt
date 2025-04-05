@@ -1,0 +1,2 @@
+A divulgação não se apresentou efetiva, pois a média se manteve nos 22 anos, porém por uma questão de outliers
+podemos ter tido uma variação na idade dos candidatos que não e perceptível.

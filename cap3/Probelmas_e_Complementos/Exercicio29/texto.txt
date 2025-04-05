@@ -1,0 +1,5 @@
+- Amostras aleatórias das ações negociadas
+- Para cada ação selecionada computou-se a porcentagem de lucro apresentada durante um período fixado de tempo.
+
+Os dados mostram a quantidade de lucro sobre uma ação em um periodo de tempo, que é o quanto o valor da
+ação variou em um certo período de tempo, que é então fim - início.

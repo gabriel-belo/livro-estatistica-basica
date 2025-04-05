@@ -1,0 +1,3 @@
+-Peso (gramas) é uma variável quantitativa contínua, pois seus valores estão divididos em são classes que podem ir de 960.000 mg
+até 979.999 mg
+-ni é uma variável quantitativa discreta, pois é a quantidade de frangos por peso.
