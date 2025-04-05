@@ -965,3 +965,105 @@ Onde:
       <li>h = Amplitude da classe.</li>
       
 </ul>
+
+<h4>Exercicio 28 B</h4>
+A fórmula utilizada foi:
+2dp(X)/ √​n
+
+Significado de cada parte:
+<ul>
+      <li>dp(X): É o desvio padrão da variável aleatória X. Representa o grau de dispersão (ou variabilidade) dos dados em relação à média.</li>
+      <li>√n : É a raiz quadrada do tamanho da amostra. O n representa o número de observações (tamanho da amostra).</li>
+      <li>dp(X)/√n: É o erro padrão da média. Ele mede o quanto a média amostral tende a variar de amostra para amostra. Quanto maior a amostra, menor o erro padrão.</li>
+      <li>Multiplicação por 2:
+      Esse "2" é um valor aproximado correspondente ao nível de confiança de 95% em uma distribuição normal padrão. Mais precisamente, seria cerca de 1,96, mas muitas vezes arredonda-se            para facilitar os cálculos. Isso define a "largura" do intervalo de confiança.</li>
+</ul>
+
+A expressão representa a margem de erro para um intervalo de confiança de 95% da média de uma amostra.
+
+Exemplo de aplicação dessa fórmula:
+
+Você está medindo o tempo (em segundos) que uma lâmpada demora para acender em 10 testes.
+
+Os tempos foram:
+1.8, 2.1, 2.0, 1.9, 2.2, 2.0, 2.1, 2.0, 1.9, 2.2
+
+Calcular média:
+media= 2.02
+
+Calcular desvio padrão amostral dp(X):
+Fórmula: dp(X)=√(∑(xi​−x)2² /n−1)
+
+No caso desvio padrão amostral= 0.1315
+
+Então applicar na fórmula do intervalo(2dp(X)/ √​n). O resultado é 0.0832
+
+Resultado final:
+
+A média foi 2.02
+
+A margem de erro (com 95% de confiança) é ±0.0832
+
+Então, o intervalo de confiança da média é: [2.02−0.0832, 2.02+0.0832]=[1.9368, 2.1032]
+
+Com 95% de confiança, podemos dizer que o tempo médio real para a lâmpada acender está entre 1.94 e 2.10 segundos.
+
+<h4>Exercicio 28 C</h4>
+Como adicionar o valor em cima de cada barra e explicação do código:
+
+'''
+for bar in ax.patches:
+    height = bar.get_height()
+    ax.annotate(f'{int(height)}',
+                xy=(bar.get_x() + bar.get_width() / 2, height),
+                xytext=(0, 3),
+                textcoords="offset points",
+                ha='center', va='bottom', fontsize=10)
+'''
+
+1. for bar in ax.patches:
+    ax é o gráfico (AxesSubplot) criado pelo sns.barplot(...).
+    ax.patches contém todas as barras desenhadas no gráfico.
+    Essa linha começa um laço que percorre cada barra (bar) para adicionar o valor da frequência em cima dela.
+
+2. height = bar.get_height()
+    bar.get_height() retorna a altura da barra, que no caso de um gráfico de barras verticais, representa a frequência.
+    Aqui, estamos salvando esse valor para poder usá-lo na anotação.
+
+3. ax.annotate(...)
+ Essa função escreve texto dentro do gráfico.
+
+Vamos quebrar os parâmetros:
+🗨️ f'{int(height)}'
+    Esse é o texto a ser exibido — ou seja, o número da frequência.
+    A função int(height) converte para número inteiro (ex: 12.0 → 12).
+    O f'{}' é uma f-string do Python para interpolar variáveis.
+
+📍 xy=(bar.get_x() + bar.get_width() / 2, height)
+    Define a posição do texto dentro do gráfico.
+    bar.get_x() → posição horizontal onde a barra começa.
+    bar.get_width()/2 → metade da largura da barra, para centralizar o texto no meio.
+    height → altura da barra → onde o topo da barra está.
+🔹 Resultado: o texto vai ser colocado centralizado acima da barra.
+
+🧭 xytext=(0, 3)
+    Isso desloca o texto um pouco acima da posição real (xy) — nesse caso, 3 pixels para cima.
+    0 → sem deslocamento na horizontal.
+    3 → deslocamento vertical positivo (mais alto que o topo da barra).
+
+🗺️ textcoords="offset points"
+    Diz ao matplotlib que o deslocamento xytext deve ser feito em pontos (pixels) a partir do ponto original (xy).
+
+📐 ha='center'
+    Horizontal alignment → centraliza o texto horizontalmente.
+
+📏 va='bottom'
+    Vertical alignment → alinha o texto pela base (embaixo), útil para que o texto cresça para cima.
+
+🖋️ fontsize=10
+    Define o tamanho da fonte do texto.
+
+
+
+<h4>Exercicio 33</h4>
+Ao fazer uma query para utilizar variáveis externas é necessário adicionar um @ a frente delas e é possível adicionar mais de uma condição a query.
