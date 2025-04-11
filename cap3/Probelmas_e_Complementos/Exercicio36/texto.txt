@@ -1,0 +1,2 @@
+Com base no boxplot chegamos a conclusão que não temos nenhum outlier, podemos dizer que os valores se apresentam
+bem distribuídos, porém com uma maior dispersão nos 25% valores finais.

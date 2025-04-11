@@ -1,0 +1,32 @@
+Interprete a fórmula Z: Z= X - x/ dp(X)
+
+X=Nota dos alunos
+x=media
+dp= desvio padrão
+
+A subtração traz a diferença entre o valor xi e a média x, e a divisão traz a proporção dessa distância em
+desvios padrão.
+
+Esta fórmula é o valor padronizado (ou escore-z),Essa fórmula diz quantos desvios padrão um valor X
+está distante da média x.
+
+Mostra a distância entre um valor individual X e a média X, em unidades de desvio padrão.
+
+Porque 2 pontos podem significar coisas muito diferentes, dependendo da dispersão dos dados.
+Exemplos:
+Se as notas variam pouco (dp = 1), então 2 pontos é muito acima da média.
+Se as notas variam muito (dp = 5), então 2 pontos é quase nada.
+Ou seja, a mesma diferença pode ser mais ou menos significativa, dependendo do quão espalhados os dados
+estão — e é isso que o desvio padrão mede.
+
+
+Dividir pela dispersão (dp) normaliza a diferença
+Quando você faz:
+z=X−X/dp(X)
+
+você está dizendo:
+"Quantos desvios padrão cabem nessa diferença?"
+Se:
+dp(X)=1dp(X)=1: o resultado é 2 → a diferença é 2 desvios acima
+dp(X)=2dp(X)=2: o resultado é 1 → a diferença é 1 desvio acima
+dp(X)=4dp(X)=4: o resultado é 0,5 → a diferença é meio desvio acima
