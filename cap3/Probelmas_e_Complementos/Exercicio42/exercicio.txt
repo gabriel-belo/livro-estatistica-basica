@@ -1,0 +1,9 @@
+Neste exercício teremos uma tabela com dados sobre o Brasil, regiões, estados, superfície, população
+e densidade
+
+Tipo de variavel:
+-Regiões: São variaveis do tipo qualitativo nominal, pois só nomeia não ordenada
+-UF: São variáveis do tipo qualitativo nominal também, pois so nomeia e não estão ordenadas
+-Superfície: É uma variavel do tipo quantitativo contínua, pois apresenta valores muito quebrados
+-População: É uma variavel do tipo quantitativa discreta, pois não pode ter valores decimais
+-Densidade: É uma variavel do tipo quantitativo continua, pois tem valores quebrados e específicos
