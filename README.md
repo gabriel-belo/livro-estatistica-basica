@@ -1067,3 +1067,22 @@ Vamos quebrar os parâmetros:
 
 <h4>Exercicio 33</h4>
 Ao fazer uma query para utilizar variáveis externas é necessário adicionar um @ a frente delas e é possível adicionar mais de uma condição a query.
+
+<h4>Exercício 39- media aparada</h4>
+Média aparada: Se 0 <  α < 1. Uma média aparada a 100α% é obtida eliminando os 100α% das menores observações e 100α% das maiores observações e calculando-se a média aritmética do restante.
+Por exemplo, se tivermos 10 observações ordenadas x(1) < x(2) < x(3) ... < x(10) a média operada a 10% é:
+x(0, 10) =x(2) + x(3) + ... + x(9)/ 8
+Se α= 0.25, x(0,25) é chamada de meia-média
+
+<h4>Exercicio40 - Coeficiente de variação</h4>
+Para comparar a variabilidade de dois conjuntos de dados podemos usar o coeficiente de variação, que é definido como a razão entre o desvio padrão, S, e a média amostral e usualmente expressa em porcentagem:
+cv= (S / x) 100
+
+É uma medida estatística que expressa a variação relativa de um conjunto de dados em relação à sua média. Ele é útil para comparar a variabilidade de diferentes conjuntos de dados, mesmo que tenham médias diferentes.
+
+ Interpretação:
+<ul>
+      <li>Um CV baixo indica que os dados estão pouco dispersos em torno da média (mais consistentes).</li>
+      <li>Um CV alto indica que os dados estão muito dispersos (menos consistentes).</li>
+      <li>Ideal para comparar a variabilidade relativa de conjuntos de dados com escalas ou unidades diferentes.</li>
+</ul>
