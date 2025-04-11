@@ -1080,9 +1080,26 @@ cv= (S / x) 100
 
 É uma medida estatística que expressa a variação relativa de um conjunto de dados em relação à sua média. Ele é útil para comparar a variabilidade de diferentes conjuntos de dados, mesmo que tenham médias diferentes.
 
+
  Interpretação:
 <ul>
       <li>Um CV baixo indica que os dados estão pouco dispersos em torno da média (mais consistentes).</li>
       <li>Um CV alto indica que os dados estão muito dispersos (menos consistentes).</li>
       <li>Ideal para comparar a variabilidade relativa de conjuntos de dados com escalas ou unidades diferentes.</li>
 </ul>
+
+<h4>Exercício 41- Desvio absoluto mediano</h4>
+É uma medida de dispersão dos dados em relação a mediana, definida por: 
+
+dam= mediana |xj - med(xi)|
+
+0 <=j <= n, 0 <=i <= n
+
+
+<h2>Capítulo 4</h2>
+<h3>Análise Bidimensional</h3>
+Até o momento vimos como organizar e resumir informações pertinentes a um única variável (ou a um conjunto de dados), mas frequentemente estamos interessados em analisar o comportamento conjunto de duas ou mais variáveis aleatórias. Os dados aparecem na forma de uma matriz, usualmente com as colunas indicando as variáveis e as linhas os indivíduos(ou elementos).
+
+
+
+
