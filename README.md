@@ -1098,8 +1098,22 @@ dam= mediana |xj - med(xi)|
 
 <h2>Capítulo 4</h2>
 <h3>Análise Bidimensional</h3>
-Até o momento vimos como organizar e resumir informações pertinentes a um única variável (ou a um conjunto de dados), mas frequentemente estamos interessados em analisar o comportamento conjunto de duas ou mais variáveis aleatórias. Os dados aparecem na forma de uma matriz, usualmente com as colunas indicando as variáveis e as linhas os indivíduos(ou elementos).
+Até o momento vimos como organizar e resumir informações pertinentes a uma única variável (ou a um conjunto de dados), mas frequentemente estamos interessados em analisar o comportamento conjunto de duas ou mais variáveis aleatórias. Os dados aparecem na forma de uma matriz, usualmente com as colunas indicando as variáveis e as linhas os indivíduos(ou elementos). 
 
+O exemplo usado no livro resume as variáveis de x1, x2, ..., xj, ... xp e as linhas de x11 até xn1, x12 até xn2, ..., x1j até xnj, ..., x1p até xnp.
 
+Na tabela 2.1 com os dados hipotéticos da companhia MB remos uma matriz 36x7.
+
+Em algumas situações, podemos ter dois (ou mais) conjuntos de dados provenientes de observações da mesma variável. Por exemplo ter um conjunto de dados {x1, ..., xn} que são as temperaturas na cidade A, durante n meses, e outro conjunto de dados {y1, ..., yn}
+que são as temperaturas da cidade B. Dois conjuntos representam observações da mesma variável (temperatura média) em duas localidades diferentes ao longo do mesmo período de tempo (12 meses).
+
+A escolha pela forma de apresentação dos dados será ditada principalmente pelo interesse e técnicas de análise à disposição do pesquisador.
+
+Quando consideramos duas variáveis (ou dois conjuntos de dados), podemos ter três situações:
+(a) as duas variáveis são qualitativas
+(b) as duas variáveis são quantitativas
+(c) uma variável é qualitativa e a outra quantitativa
+
+As técnicas de análise de dados são diferentes nas três situações Quabdo as variáveis são qualitativas, os dados são resumidos em tabelas de dupla entrada (ou de contingência), em que aparecerãoas frequências absolutas ou contagens de indivíduosque pertencem simultaneamente a categorias de uma ou outra variável. Quando as duas variáveis são quantitativas, as observações são provenientes de mensurações, e técnicas como gráficos de dispersão ou de quantis são apropriadas. Quando temos uma variável qualitativa e outra quantitativa, em geral, analisamos o que acontece com a variável quantitativa quando os dados são categorizados de acorodo com os diversos atributos da variável qualitativa.
 
 
