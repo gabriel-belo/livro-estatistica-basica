@@ -1100,9 +1100,11 @@ dam= mediana |xj - med(xi)|
 <h3>Análise Bidimensional</h3>
 Até o momento vimos como organizar e resumir informações pertinentes a uma única variável (ou a um conjunto de dados), mas frequentemente estamos interessados em analisar o comportamento conjunto de duas ou mais variáveis aleatórias. Os dados aparecem na forma de uma matriz, usualmente com as colunas indicando as variáveis e as linhas os indivíduos(ou elementos). 
 
-O exemplo usado no livro resume as variáveis de x1, x2, ..., xj, ... xp e as linhas de x11 até xn1, x12 até xn2, ..., x1j até xnj, ..., x1p até xnp.
+O exemplo usado no livro resume as variáveis de x1, x2, ..., xj, ... xp e as linhas de x11 até xn1, x12 até xn2, ..., x1j até xnj, ..., x1p até xnp e a coluna de definição de cada valor que tera em cada linha de 1 a n.
 
-Na tabela 2.1 com os dados hipotéticos da companhia MB remos uma matriz 36x7.
+O principal objetivo das análises nessa situação é explorar relações (similaridades entre as colunas, ou algumas vezes entre as linhas).
+
+Na tabela 2.1 com os dados hipotéticos da companhia MB temos uma matriz 36x7.
 
 Em algumas situações, podemos ter dois (ou mais) conjuntos de dados provenientes de observações da mesma variável. Por exemplo ter um conjunto de dados {x1, ..., xn} que são as temperaturas na cidade A, durante n meses, e outro conjunto de dados {y1, ..., yn}
 que são as temperaturas da cidade B. Dois conjuntos representam observações da mesma variável (temperatura média) em duas localidades diferentes ao longo do mesmo período de tempo (12 meses).
@@ -1115,5 +1117,136 @@ Quando consideramos duas variáveis (ou dois conjuntos de dados), podemos ter tr
 (c) uma variável é qualitativa e a outra quantitativa
 
 As técnicas de análise de dados são diferentes nas três situações Quabdo as variáveis são qualitativas, os dados são resumidos em tabelas de dupla entrada (ou de contingência), em que aparecerãoas frequências absolutas ou contagens de indivíduosque pertencem simultaneamente a categorias de uma ou outra variável. Quando as duas variáveis são quantitativas, as observações são provenientes de mensurações, e técnicas como gráficos de dispersão ou de quantis são apropriadas. Quando temos uma variável qualitativa e outra quantitativa, em geral, analisamos o que acontece com a variável quantitativa quando os dados são categorizados de acorodo com os diversos atributos da variável qualitativa.
+
+Em todas as situações, o objetivo é encontrar as possíveis relações ou associações entre as duas variáveis. Essas relações podem ser encontradas por meio de métodos gráficos e medidas numéricas.
+
+Iremos entender a existÊncia de associação como mudança de opinião sobre o comportamento de uma variável na presença ou não na presença de informação sobre a segunda variável. Ilustrando: existe relação entre a altura de pessoas e o sexo em cada comunidade?
+
+<h3>4.2 Variáveis Qualitativas</h3>
+Exemplo:
+Suponha que queiramos analisar o comportamento conjunto das variáveis Y: grau de instrução e V: região de procedência.
+Cada elemento do corpo da tabela dá a frequência observada das realizações simultaneas de Y e V. A distribuição de frequência é representada por uma tabela de dupla entrada.
+
+A linha dos totais fornece a distribuição  da variável Y, ao apsso que a coluna dos totais fornece a distribuição da variável V.
+
+Neste caso temos a distribuição conjunta das frequências das variáveis grau de instrução (Y) e região de procedência(V).
+
+Trabalhamos com frequências relativas (proporções). As três possibilidades de expressarmos a proporção de cada casela:
+(a) em relação ao total geral;
+(b) em relação ao total de cada linha;
+(c) ou em relação ao total de cada coluna;
+
+De acordo com o objetivo do probkema em estudo, uma delas será a mais conveninte.
+Exemplo:
+Vamos supor que fizemos uma pesquisa com pessoas sobre preferência de fruta por faixa etária:
+<table border="1">
+  <caption><strong>Tabela Base</strong></caption>
+  <tr>
+    <th>Faixa Etária</th>
+    <th>Banana</th>
+    <th>Maçã</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>Jovens</td>
+    <td>30</td>
+    <td>20</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Adultos</td>
+    <td>40</td>
+    <td>10</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <th>Total</th>
+    <th>70</th>
+    <th>30</th>
+    <th>100</th>
+  </tr>
+</table>
+
+(a) Frequência Relativa em Relação ao Total Geral (100)
+
+Você divide cada valor da tabela pelo total geral (100). Isso mostra a proporção que cada célula representa do total.
+
+<table border="1">
+  <caption><strong>Frequência Relativa em Relação ao Total Geral</strong></caption>
+  <tr>
+    <th>Faixa Etária</th>
+    <th>Banana</th>
+    <th>Maçã</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>Jovens</td>
+    <td>0,30</td>
+    <td>0,20</td>
+    <td>0,50</td>
+  </tr>
+  <tr>
+    <td>Adultos</td>
+    <td>0,40</td>
+    <td>0,10</td>
+    <td>0,50</td>
+  </tr>
+  <tr>
+    <th>Total</th>
+    <th>0,70</th>
+    <th>0,30</th>
+    <th>1,00</th>
+  </tr>
+</table>
+
+(b) Frequência Relativa em Relação ao Total de Cada Linha
+
+Você divide cada valor da linha pelo total da própria linha. Mostra a distribuição interna da preferência dentro de cada faixa etária.
+
+<table border="1">
+  <caption><strong>Frequência Relativa por Linha</strong></caption>
+  <tr>
+    <th>Faixa Etária</th>
+    <th>Banana</th>
+    <th>Maçã</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>Jovens</td>
+    <td>0,60</td>
+    <td>0,40</td>
+    <td>1,00</td>
+  </tr>
+  <tr>
+    <td>Adultos</td>
+    <td>0,80</td>
+    <td>0,20</td>
+    <td>1,00</td>
+  </tr>
+</table>
+
+
+(c) Frequência Relativa em Relação ao Total de Cada Coluna
+
+Agora, dividimos cada valor da coluna pelo total da própria coluna. Isso mostra a composição de quem escolheu cada fruta.
+
+<table border="1">
+  <caption><strong>Frequência Relativa por Coluna</strong></caption>
+  <tr>
+    <th>Faixa Etária</th>
+    <th>Banana</th>
+    <th>Maçã</th>
+  </tr>
+  <tr>
+    <td>Jovens</td>
+    <td>0,43</td>
+    <td>0,67</td>
+  </tr>
+  <tr>
+    <td>Adultos</td>
+    <td>0,57</td>
+    <td>0,33</td>
+  </tr>
+</table>
 
 
