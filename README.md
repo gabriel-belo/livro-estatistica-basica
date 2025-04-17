@@ -1250,3 +1250,71 @@ Agora, dividimos cada valor da coluna pelo total da própria coluna. Isso mostra
 </table>
 
 
+<h4>Exercicio 3</h4>
+
+Cruza duas ou mais variáveis categóricas (ou colunas com valores classificados), e conta quantas vezes cada combinação aparece. 
+
+pd.crosstab(linhas, colunas)
+
+Maneiras de acessar os dados:
+
+✅ 1. Acessar uma célula específica:
+
+# Acessar valor na linha 'baixo' e coluna 'alto'
+valor = tabela_conjunta.loc['baixo', 'alto']
+print(valor)  # Saída: 8
+
+✅ 2. Acessar uma linha inteira:
+
+linha = tabela_conjunta.loc['alto']
+print(linha)
+
+✅ 3. Acessar uma coluna inteira:
+
+coluna = tabela_conjunta['baixo']
+print(coluna)
+
+✅ 4. Acessar usando .at (mais rápido para um valor só):
+
+valor = tabela_conjunta.at['alto', 'alto']
+
+✅ 5. Selecionar um pedaço da tabela:
+
+subtabela = tabela_conjunta.loc[['baixo', 'alto'], ['baixo', 'alto']]
+
+
+<h3>Asociação entre Variáveis Qualitativas</h3>
+Um dos principais objetivos de se construir uma distribuição conjunta de duas variáveis qualitativas é descrever a associação entre elas, isto é, queremos conhecer o grau de dependência entre elas, de modo que podemos prever melhor o resultado de uma delas quando conhecemos a realização da outra.
+
+<ul>
+      <li>Probabilidade conjunta: de dois eventos acontecerem ao mesmo tempo (ex: ser mulher e gostar de café).</li>
+      <li>Probabilidade condicional: dado que um evento aconteceu, qual a chance do outro.</li>
+      <li>Probabilidade marginal: apenas um evento, sem condicionar nem combinar com outro. A probabilidade de um único evento acontecer, sem considerar a ocorrência de outro evento.</li>
+</ul>
+
+Duas variáveis são dependentes quando a informação de uma muda a probabilidade da outra acontecer.
+
+🔄 Exemplos pra clarear:
+✅ Exemplo de variáveis dependentes:
+
+    Variável 1: Está chovendo?
+
+    Variável 2: A pessoa está de guarda-chuva?
+
+Se você souber que está chovendo, a chance da pessoa estar com guarda-chuva aumenta muito.
+Ou seja, uma variável afeta a outra → são dependentes.
+🚫 Exemplo de variáveis independentes:
+
+    Variável 1: A cor da camiseta da pessoa
+
+    Variável 2: Se ela gosta de pizza
+
+Saber a cor da camiseta não muda a chance dela gostar de pizza → são independentes.
+
+Como as probabilidades marginais ajudam a identificar dependência ou independência:
+<ul>
+      <li>Comparando probabilidades marginais de uma variável com a probabilidade condicional de uma variável, podemos verificar a dependência entre elas.</li>
+      <li>Se as probabilidades condicionais mudam significativamente com base na variável que estamos condicionando (por exemplo, ser homem ou mulher), isso sugere que as variáveis são dependentes.
+</li>
+      <li>Se as probabilidades condicionais de uma variável forem quase iguais, independentemente da outra variável, isso sugere que as variáveis são independentes.</li>
+</ul>
