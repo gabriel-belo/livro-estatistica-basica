@@ -1318,3 +1318,55 @@ Como as probabilidades marginais ajudam a identificar dependência ou independê
 </li>
       <li>Se as probabilidades condicionais de uma variável forem quase iguais, independentemente da outra variável, isso sugere que as variáveis são independentes.</li>
 </ul>
+
+<h3>Medidas de Associação entre variáveis Qualitativas</h3>
+De modo geral, a quantificação do grau de associação entre duas variáves é feita pelos chamados coeficientes de associação ou correlação. Essas são medidas que descrevem, por meio de um único número, a associação (ou dependência) entre duas variáveis. Para facilitar a compreensão, esses coeficientes usualmente variam entre 0 e 1, ou entre -1 e +1, e a proximidade de zero indica falta de associação.
+
+🔷 1. Coeficientes de correlação (para variáveis quantitativas)
+
+Servem para medir força e direção da relação entre duas variáveis numéricas, como "idade" e "pressão arterial".
+📏 O principal: Correlação de Pearson
+
+    Mede a linearidade da relação entre duas variáveis.
+
+    Varia de -1 a +1:
+
+        +1 → correlação perfeita positiva (quando uma aumenta, a outra também)
+
+        0 → nenhuma correlação linear
+
+        –1 → correlação perfeita negativa (quando uma aumenta, a outra diminui)
+
+Exemplo:
+Altura e peso costumam ter correlação positiva.
+➕ Outros tipos:
+
+    Spearman (ρ): usa rankings em vez dos valores brutos. Bom para relações monótonas não lineares.
+
+    Kendall (τ): mede a concordância entre pares de ordenações.
+
+🔶 2. Coeficientes de associação (para variáveis categóricas)
+
+Usados quando você quer saber se duas variáveis qualitativas estão associadas. Ex: "Sexo" e "Uso do hospital".
+🔸 Coeficiente de Phi (φ)
+
+    Usado para tabelas 2x2.
+
+    Varia de 0 (sem associação) a 1 (associação perfeita).
+
+🔸 Coeficiente de Cramér’s V
+
+    Usado para tabelas maiores que 2x2 (ex: 3x3).
+
+    Varia entre 0 (nenhuma associação) e 1 (associação perfeita).
+
+
+Para verificar a diferença entre os valores observados e os valores esperado caso as variáveis não fossem associadas.  Podemos usar a fórmula: 
+(Oi- ei)²/ ei
+
+<ul>
+      <li>oi: É o valor observado</li>
+      <li>ei: É o valor esperado</li>
+</ul>
+
+
